@@ -8,7 +8,7 @@ export default function Home() {
         <title>ENDEAVOUR</title>
       </Head>
 
-      <Parallax pages={5}>
+      <Parallax pages={4}>
         <ParallaxLayer speed={1}>
           <div className="container mx-auto" style={{ bottom: "-60%", position: "relative" }}>
             <img src="/img/earth.png" className="mw-1/2 mx-auto" />
@@ -40,7 +40,7 @@ export default function Home() {
             </p>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1}>
+        <ParallaxLayer offset={2}>
           <div className="container text-center mx-auto">
             <h2 className="font-bold text-2xl">About</h2>
             <p>
@@ -59,7 +59,7 @@ export default function Home() {
             </p>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={2}>
+        <ParallaxLayer offset={3}>
           <div className="container text-center mx-auto">
             <h2 className="font-bold text-2xl">Contact</h2>
             <p>Follow us on:</p>
