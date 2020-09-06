@@ -1,5 +1,5 @@
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Head from "next/head";
+import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
           Pre-save 'The Curse' now! Releases September 18th
         </a>
       </div>
-      <Parallax pages={4}>
+      <Parallax pages={5}>
         <ParallaxLayer speed={1}>
           <div className="earth"> </div>
         </ParallaxLayer>
