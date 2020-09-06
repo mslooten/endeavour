@@ -1,5 +1,5 @@
-import Head from 'next/head';
-import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -7,41 +7,49 @@ export default function Home() {
       <Head>
         <title>ENDEAVOUR</title>
       </Head>
-
+      <div className="logo">
+        <img src="/img/logo.svg" className="mw-1/2 h-16 px-4 mx-auto" alt="Endeavour logo" />
+        <a
+          href="https://distrokid.com/hyperfollow/endeavour2/the-curse"
+          target="_blank"
+          rel="nofollow"
+          className="text-center text-sm hover:underline"
+        >
+          Pre-save 'The Curse' now! Releases September 18th
+        </a>
+      </div>
       <Parallax pages={4}>
         <ParallaxLayer speed={1}>
-          <div className="container mx-auto" style={{ bottom: "-60%", position: "relative" }}>
-            <img src="/img/earth.png" className="mw-1/2 mx-auto" />
+          <div className="earth"> </div>
+        </ParallaxLayer>
+        <ParallaxLayer speed={-1.5}>
+          <div className="astronaut">
+            <img src="/img/astronaut.png" className="w-16 animated-astro" alt="Astronaut looking at earth" />
           </div>
         </ParallaxLayer>
-        <ParallaxLayer speed={0.5}>
-          <img src="/img/astronaut.png" className="mt-16 w-16 mx-auto" style={{ top: "40%", position: "relative" }} />
-        </ParallaxLayer>
-        <ParallaxLayer speed={-1}>
-          <div className="container mx-auto">
-            <img src="/img/logo.svg" className="mw-1/2 h-16 mt-16 mx-auto" />
-          </div>
-        </ParallaxLayer>
+
         <ParallaxLayer>
-          <div className="container mx-auto mt-64">
-            <h1 className="text-white text-3xl font-bold text-center">UPCOMING RELEASE: THE CURSE</h1>
-            <p className="text-center text-white">
-              The Curse will drop on September 18th 2020. Get it when it comes out? Click the pre-save button below!
-              <br />
-              <br />
-              <a
-                href="https://distrokid.com/hyperfollow/endeavour2/the-curse"
-                target="_blank"
-                rel="nofollow"
-                className="text-black text-center text-lg hover:bg-transparent hover:text-white inline-block border-2  border-solid border-white bg-white p-4 rounded-lg transition-colors duration-300"
-              >
-                Pre-save now!
-              </a>
-            </p>
+          <div className="container mx-auto px-4 main">
+            <div>
+              <h1 className="text-white text-2xl font-bold text-center leading-none">UPCOMING RELEASE: THE CURSE</h1>
+              <p className="text-center text-white text-sm mt-4">
+                The Curse will drop on September 18th 2020. Get it when it comes out? Click the pre-save button below!
+                <br />
+                <br />
+                <a
+                  href="https://distrokid.com/hyperfollow/endeavour2/the-curse"
+                  target="_blank"
+                  rel="nofollow"
+                  className="text-black text-center text-lg hover:bg-transparent hover:text-white inline-block border-2  border-solid border-white bg-white p-4 rounded-lg transition-colors duration-300"
+                >
+                  Pre-save now!
+                </a>
+              </p>
+            </div>
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={2}>
-          <div className="container text-center mx-auto">
+          <div className="container text-center mx-auto px-4 max-w-xl">
             <h2 className="font-bold text-2xl">About</h2>
             <p>
               Endeavour is a thrash/heavy metal band from The Netherlands. Fat riffs, great melodies and a dynamic rhythm make up the music.
@@ -49,29 +57,35 @@ export default function Home() {
             </p>
             <p className="mt-8">
               <strong>Endeavour is:</strong>
-              <ul className="mt-4">
-                <li>Marco van Sterkenburg (vocals)</li>
-                <li>Redmar van der Sluys (guitars)</li>
-                <li> Marco Slooten (guitars, producer)</li>
-                <li> Lucas Blankenstein (bass)</li>
-                <li> Jeroen Vermeer (drums)</li>
-              </ul>
             </p>
+            <ul className="mt-4">
+              <li>Marco van Sterkenburg (vocals)</li>
+              <li>Redmar van der Sluys (guitars)</li>
+              <li> Marco Slooten (guitars, producer)</li>
+              <li> Lucas Blankenstein (bass)</li>
+              <li> Jeroen Vermeer (drums)</li>
+            </ul>
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={3}>
-          <div className="container text-center mx-auto">
+          <div className="container text-center mx-auto px-4">
             <h2 className="font-bold text-2xl">Contact</h2>
             <p>Follow us on:</p>
             <ul className="mt-4">
               <li>
-                <a href="https://open.spotify.com/artist/74lJzi7InwUGj1xtX2GCZZ?si=R_Fgy068S_CP6kmgHSqAUQ">Spotify</a>
+                <a href="https://open.spotify.com/artist/74lJzi7InwUGj1xtX2GCZZ?si=R_Fgy068S_CP6kmgHSqAUQ" className="underline">
+                  Spotify
+                </a>
               </li>
               <li>
-                <a href="https://instagram.com/endeavourmusic">Instagram</a>
+                <a href="https://instagram.com/endeavourmusic" className="underline">
+                  Instagram
+                </a>
               </li>
               <li>
-                <a href="https://facebook.com/EndeavourNL">Facebook</a>
+                <a href="https://facebook.com/EndeavourNL" className="underline">
+                  Facebook
+                </a>
               </li>
             </ul>
             <p className="mt-8">For bookings and media requests, please reach out on info [at] endeavourband.com</p>
