@@ -1,11 +1,27 @@
-import Head from "next/head";
-import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
+import Head from 'next/head';
+import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 
 export default function Home() {
   return (
     <div>
       <Head>
         <title>ENDEAVOUR</title>
+        {process.env.NODE_ENV === "production" && (
+          <>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177547215-1" />
+
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-177547215-1', { anonymize_ip: true });
+        `
+              }}
+            />
+          </>
+        )}
       </Head>
       <div className="logo">
         <img src="/img/logo.svg" className="mw-1/2 h-16 px-4 mx-auto" alt="Endeavour logo" />
@@ -59,11 +75,10 @@ export default function Home() {
               <strong>Endeavour is:</strong>
             </p>
             <ul className="mt-4">
-              <li>Marco van Sterkenburg (vocals)</li>
+              <li>Marco Slooten (guitars, producer)</li>
               <li>Redmar van der Sluys (guitars)</li>
-              <li> Marco Slooten (guitars, producer)</li>
-              <li> Lucas Blankenstein (bass)</li>
-              <li> Jeroen Vermeer (drums)</li>
+              <li>Lucas Blankenstein (bass)</li>
+              <li>Jeroen Vermeer (drums)</li>
             </ul>
           </div>
         </ParallaxLayer>
