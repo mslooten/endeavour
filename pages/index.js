@@ -49,7 +49,7 @@ export default function Home() {
             <div>
               <h1 className="text-white text-2xl font-bold text-center leading-none hidden">UPCOMING RELEASE: THE CURSE</h1>
               <iframe
-                className="mx-auto my-4"
+                className="mx-auto my-4 max-w-full block"
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/jt-HtcHki94"
