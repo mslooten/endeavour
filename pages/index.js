@@ -47,7 +47,16 @@ export default function Home() {
         <ParallaxLayer>
           <div className="container mx-auto px-4 main">
             <div>
-              <h1 className="text-white text-2xl font-bold text-center leading-none">UPCOMING RELEASE: THE CURSE</h1>
+              <h1 className="text-white text-2xl font-bold text-center leading-none hidden">UPCOMING RELEASE: THE CURSE</h1>
+              <iframe
+                className="mx-auto my-4"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/jt-HtcHki94"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
               <p className="text-center text-white text-sm mt-4">
                 The Curse will drop on September 18th 2020. Get it when it comes out? Click the pre-save button below!
                 <br />
