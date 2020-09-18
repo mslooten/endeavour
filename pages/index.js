@@ -47,18 +47,19 @@ export default function Home() {
         <ParallaxLayer>
           <div className="container mx-auto px-4 main">
             <div>
-              <h1 className="text-white text-2xl font-bold text-center leading-none hidden">UPCOMING RELEASE: THE CURSE</h1>
+              <h1 className="text-white text-2xl font-bold text-center leading-none hidden">OUT NOW : THE CURSE</h1>
+
               <iframe
                 className="mx-auto my-4 max-w-full block"
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/jt-HtcHki94"
+                src="https://open.spotify.com/embed/track/2LZFpYqUyqkqpjBTRbcm7f"
+                width="300"
+                height="380"
                 frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowtransparency="true"
+                allow="encrypted-media"
               ></iframe>
               <p className="text-center text-white text-sm mt-4">
-                The Curse will drop on September 18th 2020. Get it when it comes out? Click the pre-save button below!
+                The Curse is out now! Listen to it on Spotify or through any other platform (click the button below):
                 <br />
                 <br />
                 <a
@@ -67,7 +68,7 @@ export default function Home() {
                   rel="nofollow"
                   className="text-black text-center text-lg hover:bg-transparent hover:text-white inline-block border-2  border-solid border-white bg-white p-4 rounded-lg transition-colors duration-300"
                 >
-                  Pre-save now!
+                  Get it now!
                 </a>
               </p>
             </div>
