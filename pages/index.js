@@ -31,7 +31,7 @@ export default function Home() {
           rel="nofollow"
           className="text-center text-sm hover:underline"
         >
-          Pre-save 'The Curse' now! Releases September 18th
+          'The Curse' is out now!
         </a>
       </div>
       <Parallax pages={5}>
