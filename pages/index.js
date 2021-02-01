@@ -1,5 +1,5 @@
-import Head from 'next/head';
-import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
+import Head from "next/head";
+import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 
 export default function Home() {
   return (
@@ -8,7 +8,10 @@ export default function Home() {
         <title>ENDEAVOUR</title>
         {process.env.NODE_ENV === "production" && (
           <>
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177547215-1" />
+            <script
+              async
+              src="https://www.googletagmanager.com/gtag/js?id=UA-177547215-1"
+            />
 
             <script
               dangerouslySetInnerHTML={{
@@ -17,21 +20,25 @@ export default function Home() {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'UA-177547215-1', { anonymize_ip: true });
-        `
+        `,
               }}
             />
           </>
         )}
       </Head>
       <div className="logo">
-        <img src="/img/logo.svg" className="mw-1/2 h-16 px-4 mx-auto" alt="Endeavour logo" />
+        <img
+          src="/img/logo.svg"
+          className="mw-1/2 h-16 px-4 mx-auto"
+          alt="Endeavour logo"
+        />
         <a
           href="https://distrokid.com/hyperfollow/endeavour2/the-curse"
           target="_blank"
           rel="nofollow"
           className="text-center text-sm hover:underline"
         >
-          'The Curse' is out now!
+          Pre-save 'Perseverance' now!
         </a>
       </div>
       <Parallax pages={5}>
@@ -40,35 +47,42 @@ export default function Home() {
         </ParallaxLayer>
         <ParallaxLayer speed={-1.5}>
           <div className="astronaut">
-            <img src="/img/astronaut.png" className="w-16 animated-astro" alt="Astronaut looking at earth" />
+            <img
+              src="/img/astronaut.png"
+              className="w-16 animated-astro"
+              alt="Astronaut looking at earth"
+            />
           </div>
         </ParallaxLayer>
 
         <ParallaxLayer>
           <div className="container mx-auto px-4 main">
             <div>
-              <h1 className="text-white text-2xl font-bold text-center leading-none hidden">OUT NOW : THE CURSE</h1>
+              <h1 className="text-white text-2xl font-bold text-center leading-none hidden">
+                OUT FEB 18th: PERSEVERANCE
+              </h1>
 
               <iframe
                 className="mx-auto my-4 max-w-full block"
-                src="https://open.spotify.com/embed/track/2LZFpYqUyqkqpjBTRbcm7f"
-                width="300"
-                height="380"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/jWruwDMVQAw"
                 frameborder="0"
-                allowtransparency="true"
-                allow="encrypted-media"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
               ></iframe>
               <p className="text-center text-white text-sm mt-4">
-                The Curse is out now! Listen to it on Spotify or through any other platform (click the button below):
+                'Perseverance (feat. Bjørn Ciggaar)' will drop February 18th.
+                Pre-save it now to get it on release:
                 <br />
                 <br />
                 <a
-                  href="https://distrokid.com/hyperfollow/endeavour2/the-curse"
+                  href="https://distrokid.com/hyperfollow/endeavour2/perseverance-feat-bjrn-ciggaar"
                   target="_blank"
                   rel="nofollow"
                   className="text-black text-center text-lg hover:bg-transparent hover:text-white inline-block border-2  border-solid border-white bg-white p-4 rounded-lg transition-colors duration-300"
                 >
-                  Get it now!
+                  Pre-save it now!
                 </a>
               </p>
             </div>
@@ -78,8 +92,10 @@ export default function Home() {
           <div className="container text-center mx-auto px-4 max-w-xl">
             <h2 className="font-bold text-2xl">About</h2>
             <p>
-              Endeavour is a thrash/heavy metal band from The Netherlands. Fat riffs, great melodies and a dynamic rhythm make up the music.
-              Endeavour is inspired by the metal greats from the 80ies up until now.
+              Endeavour is a thrash/heavy metal band from The Netherlands. Fat
+              riffs, great melodies and a dynamic rhythm make up the music.
+              Endeavour is inspired by the metal greats from the 80ies up until
+              now.
             </p>
             <p className="mt-8">
               <strong>Endeavour is:</strong>
@@ -98,22 +114,34 @@ export default function Home() {
             <p>Follow us on:</p>
             <ul className="mt-4">
               <li>
-                <a href="https://open.spotify.com/artist/74lJzi7InwUGj1xtX2GCZZ?si=R_Fgy068S_CP6kmgHSqAUQ" className="underline">
+                <a
+                  href="https://open.spotify.com/artist/74lJzi7InwUGj1xtX2GCZZ?si=R_Fgy068S_CP6kmgHSqAUQ"
+                  className="underline"
+                >
                   Spotify
                 </a>
               </li>
               <li>
-                <a href="https://instagram.com/endeavourmusic" className="underline">
+                <a
+                  href="https://instagram.com/endeavourmusic"
+                  className="underline"
+                >
                   Instagram
                 </a>
               </li>
               <li>
-                <a href="https://facebook.com/EndeavourNL" className="underline">
+                <a
+                  href="https://facebook.com/EndeavourNL"
+                  className="underline"
+                >
                   Facebook
                 </a>
               </li>
             </ul>
-            <p className="mt-8">For bookings and media requests, please reach out on info [at] endeavourband.com</p>
+            <p className="mt-8">
+              For bookings and media requests, please reach out on info [at]
+              endeavourband.com
+            </p>
           </div>
         </ParallaxLayer>
       </Parallax>
