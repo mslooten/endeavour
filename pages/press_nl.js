@@ -51,11 +51,11 @@ export default function Home() {
         </p>
 
         <p className="text-center text-white text-sm mt-4">
-          ‘Perseverance’ lonk bij vlagen naar Metallica en Dream Theater, maar
+          ‘Perseverance’ lonkt bij vlagen naar Metallica en Dream Theater, maar
           ook naar ouderwetse heavy metal. Dat laatste is voor een groot deel te
           danken aan de fenomenale zang van Bjørn Ciggaar (Dangerous Times for
           the Dead), een zanger die zeer sterk geïnspireerd is door Rob Halford
-          (Judas Priest). Deze samenwerking brengt het beste van deze twee
+          van Judas Priest. Deze samenwerking brengt het beste van deze twee
           werelden samen en levert een unieke sound op.
         </p>
 
