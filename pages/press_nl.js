@@ -1,7 +1,6 @@
 import Head from "next/head";
-import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 
-export default function Home() {
+export default function PressNL() {
   return (
     <>
       <Head>
@@ -108,7 +107,7 @@ export default function Home() {
             class="text-center mb-8 block"
           >
             <img
-              src="img/endeavour-band.png"
+              src="img/endeavour-band_sm.png"
               alt="Bandleden Lucas Blankenstein, Jeroen Vermeer, Marco Slooten en Redmar van der Sluys in astronautenpak"
             />
             Met de klok mee, vanaf linksboven: Lucas Blankenstein, Jeroen
@@ -120,7 +119,7 @@ export default function Home() {
             class="text-center mb-8 block"
           >
             <img
-              src="img/LUCAS_ASTRO.png"
+              src="img/LUCAS_ASTRO_sm.png"
               alt="Lucas Blankenstein (basgitaar)"
             />
             Lucas Blankenstein (basgitaar)
@@ -131,7 +130,7 @@ export default function Home() {
             class="text-center mb-8 block"
           >
             <img
-              src="img/MARCO_ASTRO.png"
+              src="img/MARCO_ASTRO_sm.png"
               alt="Marco Slooten (gitaar, productie)"
             />
             Marco Slooten (gitaar, productie)
@@ -142,7 +141,7 @@ export default function Home() {
             class="text-center mb-8 block"
           >
             <img
-              src="img/REDMAR_ASTRO.png"
+              src="img/REDMAR_ASTRO_sm.png"
               alt="Redmar van der Sluys (gitaar)"
             />
             Redmar van der Sluys (gitaar)
@@ -152,7 +151,7 @@ export default function Home() {
             target="_blank"
             class="text-center mb-8 block"
           >
-            <img src="img/JEROEN_ASTRO.png" alt="Jeroen Vermeer (drums)" />
+            <img src="img/JEROEN_ASTRO_sm.png" alt="Jeroen Vermeer (drums)" />
             Jeroen Vermeer (drums)
           </a>
         </div>
