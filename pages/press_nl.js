@@ -74,10 +74,16 @@ export default function PressNL() {
           welkom!
         </p>
         <h3 class="text-white text-lg mt-8 font-bold">Muziek</h3>
-        <a href="music/Endeavour - Perseverance (feat. Bjorn Ciggaar).mp3">
+        <a
+          href="music/Endeavour - Perseverance (feat. Bjorn Ciggaar).mp3"
+          download
+        >
           Endeavour - Perseverance (feat. Bjørn Ciggaar) (mp3)
         </a>
-        <a href="music/Endeavour - Perseverance (feat. Bjorn Ciggaar).wav">
+        <a
+          href="music/Endeavour - Perseverance (feat. Bjorn Ciggaar).wav"
+          download
+        >
           Endeavour - Perseverance (feat. Bjørn Ciggaar) (wav)
         </a>
 
