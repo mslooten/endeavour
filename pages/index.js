@@ -33,12 +33,12 @@ export default function Home() {
           alt="Endeavour logo"
         />
         <a
-          href="https://distrokid.com/hyperfollow/endeavour2/the-curse"
+          href="https://distrokid.com/hyperfollow/endeavour2/perseverance-feat-bjrn-ciggaar"
           target="_blank"
           rel="nofollow"
           className="text-center text-sm hover:underline"
         >
-          Pre-save 'Perseverance' now!
+          Listen to 'Perseverance' now!
         </a>
       </div>
       <Parallax pages={5}>
@@ -59,7 +59,7 @@ export default function Home() {
           <div className="container mx-auto px-4 main">
             <div>
               <h1 className="text-white text-2xl font-bold text-center leading-none hidden">
-                OUT FEB 18th: PERSEVERANCE
+                OUT NOW: PERSEVERANCE
               </h1>
 
               <iframe
